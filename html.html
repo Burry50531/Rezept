@@ -1,0 +1,59 @@
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Застосунок для рецептів</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/script.js">
+</head>
+<body>
+  <header>
+    <h1>Застосунок для рецептів</h1>
+    <nav>
+      <a href="#">Головна</a>
+      <a href="#">Додати рецепт</a>
+      <a href="#">Про нас</a>
+    </nav>
+  </header>
+
+  <div class="search-box">
+    <h2>Пошук рецептів…</h2>
+    <input type="text" id="searchInput" placeholder="Пошук рецептів…" onkeyup="filterRecipes()">
+  </div>
+
+  <div class="recipe-list" id="recipeList">
+    <div class="card">
+      <img src="/img/Борщ.jpg" alt="Борщ">
+      <h3>Борщ</h3>
+      <p>Прадавній рецепт з яскравим смаком буряку та м’яса</p>
+    </div>
+    <div class="card">
+      <img src="/img/вареники.jpg" alt="Вареники">
+      <h3>Вареники з картоплею</h3>
+      <p>Традиційна українська страва з картоплею та смаженою цибулею</p>
+    </div>
+    <div class="card">
+      <img src="/img/котлета.jpg" alt="Котлета">
+      <h3>Котлета по-київськи</h3>
+      <p>Соковите куряче філе з вершковим маслом усередині</p>
+    </div>
+    <div class="card">
+      <img src="/img/олівье.webp" alt="Олів'є">
+      <h3>Олів'є</h3>
+      <p>Популярний салат із вареними овочами, яйцем та майонезом</p>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h2>Додати рецепт</h2>
+    <form id="recipeForm">
+      <input type="text" id="title" placeholder="Назва" required>
+      <textarea id="description" placeholder="Опис" rows="3" required></textarea>
+      <input type="text" id="image" placeholder="Посилання на зображення" required>
+      <button type="submit">Додати</button>
+    </form>
+  </div>
+
+</body>
+</html>
